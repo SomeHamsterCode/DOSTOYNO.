@@ -12,6 +12,25 @@
     <!-- Toast уведомления -->
     <div id="toast" class="toast"></div>
 
+    <!-- ДЕКОРАТИВНЫЕ ШАРЫ НА ФОНЕ -->
+    <div class="bg-balloons">
+        <div class="bg-balloon" style="top: 10%; left: 10%; animation-delay: 0s;">
+            <img src="assets/images/circle.png" alt="balloon">
+        </div>
+        <div class="bg-balloon" style="top: 20%; right: 15%; animation-delay: 1s;">
+            <img src="assets/images/silver star.png" alt="balloon">
+        </div>
+        <div class="bg-balloon" style="top: 60%; left: 5%; animation-delay: 2s;">
+            <img src="assets/images/square.png" alt="balloon">
+        </div>
+        <div class="bg-balloon" style="top: 70%; right: 10%; animation-delay: 3s;">
+            <img src="assets/images/triangle.png" alt="balloon">
+        </div>
+        <div class="bg-balloon" style="top: 40%; left: 80%; animation-delay: 1.5s;">
+            <img src="assets/images/circle.png" alt="balloon">
+        </div>
+    </div>
+
     <!-- Экран онбординга -->
     <div id="page-onboarding" class="page active full-screen-bg">
         <div class="onboarding-content">
@@ -19,8 +38,9 @@
                 <div class="logo-dostoino">
                     <img src="assets/images/DOSTOYNO.png" alt="ДОСТОЙНО" style="width: 100%; height: auto;">
                 </div>
-                <p style="margin-top: 20px; font-size: 1.2rem;">Твой путь к 100 баллам начинается здесь</p>
-                <p class="subtitle">Никаких паролей — только твоё воображение</p>
+                
+                <!-- НОВАЯ ФРАЗА -->
+                <p class="main-slogan">Играть с ЕГЭ? Это же ДОСТОЙНО.</p>
             </div>
             
             <div class="avatar-setup">
@@ -29,18 +49,11 @@
                 <div class="input-group">
                     <label>Имя персонажа</label>
                     <input type="text" id="usernameInput" placeholder="Например: Алекс" maxlength="12">
-                    <small>Это имя увидят другие студенты</small>
-                </div>
-                
-                <div class="privacy-badge">
-                    <span class="material-icons">shield</span> Приватность включена
                 </div>
                 
                 <button class="btn-primary btn-large" onclick="startGame()">
                     Начать обучение <span class="material-icons">arrow_forward</span>
                 </button>
-                
-                <p class="terms">Продолжая, ты соглашаешься с <a href="#">Кодексом Академии</a></p>
             </div>
         </div>
     </div>
