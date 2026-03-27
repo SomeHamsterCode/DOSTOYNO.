@@ -397,7 +397,7 @@ function renderRoadmap() {
         const nodePositions = [];
         
         DB.modules.forEach((mod, index) => {
-            const offset = index % 2 === 0 ? -120 : 120;
+            const offset = index % 2 === 0 ? -90 : 90;
             const x = centerX + offset;
             const y = 150 + (index * nodeSpacing);
             nodePositions.push({ x, y, index, mod });
