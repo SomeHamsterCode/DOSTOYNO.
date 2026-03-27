@@ -392,12 +392,12 @@ function renderRoadmap() {
         
         const totalModules = DB.modules.length;
         const containerWidth = container.offsetWidth || 700;
-        const nodeSpacing = 220;
+        const nodeSpacing = 320;
         const centerX = containerWidth / 2;
         const nodePositions = [];
         
         DB.modules.forEach((mod, index) => {
-            const offset = index % 2 === 0 ? -90 : 90;
+            const offset = index % 2 === 0 ? -220 : 220;
             const x = centerX + offset;
             const y = 150 + (index * nodeSpacing);
             nodePositions.push({ x, y, index, mod });
@@ -440,7 +440,7 @@ function renderRoadmap() {
                 return `<div class="${dotClass}"></div>`;
             }).join('');
             
-            const cardOffset = index % 2 === 0 ? 160 : -160;
+            const cardOffset = index % 2 === 0 ? 140 : -300;
             const nodeHTML = `
                 <div class="roadmap-node ${statusClass}" style="left: ${x - 45}px; top: ${y - 45}px;" onclick="${isLocked ? '' : `openModule(${mod.id})`}">
                     ${modState.gold ? '<div class="gold-crown">👑</div>' : ''}
